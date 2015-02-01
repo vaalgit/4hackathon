@@ -1,0 +1,26 @@
+<section data-ng-controller="IndexController">
+	<div style='width:95%; margin:auto; text-align:center'>
+		<img style='width:70%' src='logo.png'><br/>
+		
+		<div ng-hide='selectionPage'>
+			想不到要吃什麼嗎? <br/>
+			<input ng-model='noEat' type='text' class='wte-input-text'/><br/><br/>
+			<button ng-click='dontLikeSend()' class='btn btn-default'>請幫我想要吃什麼</button><br/><br/>
+			<button class='btn btn-default'>其實我也可以建議一下我的朋友</button><br/>
+		</div>
+		
+		<div>
+			<div class='wte-facebook-frame wte-fade-in' style='margin:auto; display:inline-block' ng-style='facebookIconStyle'>
+				<img class='wte-facebook-icon' src='facebookIcon.jpg'/><br/>
+				{{suggestPerson}}
+			</div>
+			<div style='vertical-align:top; margin:0; display:inline-block' ng-style='suggestionBarStyle'>
+				<br/>
+				<div class='suggestionBar animatedPanel' ng-style='suggestionBarStyle'>
+				<span ng-show='selectionPage'>{{suggestFood}}</span>	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</section>

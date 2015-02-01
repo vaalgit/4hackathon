@@ -1,0 +1,179 @@
+/* ================= FUNDAMENTAL TABLE CSS ===================== */
+.wte-table {
+	width:100%; 
+	display: table; 
+}
+.wte-row{
+	display: table-row;
+	width:100%;
+}
+.cell{
+	display: table-cell;
+	padding:5px 
+}
+
+.wte-facebook-frame{
+	width: 210px;
+	height:230px;
+	padding: 3px;
+	border: 1px solid #bf042b;
+	background-color: #81ed0d;
+	color: #bf042b;
+	border-radius: 5px;
+}
+
+.wte-facebook-icon{
+	width: 200px;
+	height: 200px;
+}
+
+/* ================= ROUNDED TABLE CSS =================== */
+.wte-rounded-table{
+	width: 100%;
+	display: table;
+}
+
+.wte-rounded-table div.wte-row:first-child span.cell:first-child{
+	border-top-left-radius: 10px;
+}
+
+.wte-rounded-table div.wte-row:last-child span.cell:first-child{	
+	border-bottom-left-radius: 10px;
+}
+
+.wte-rounded-table div.wte-row:first-child span.cell:last-child{
+	border-top-right-radius: 10px;
+}
+
+.wte-rounded-table div.wte-row:last-child span.cell:last-child{
+	border-bottom-right-radius: 10px;
+}
+
+.wte-rounded-table div.wte-row:not(:last-child) span.cell:not(:last-child){
+	border-top: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+}
+
+.wte-rounded-table div.wte-row:last-child span.cell:not(:last-child){
+	border-top: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-bottom: solid 1px #cccccc;
+}
+.wte-rounded-table div.wte-row:not(:last-child) span.cell:last-child{
+	border-top: solid 1px #cccccc;
+	border-left: solid 1px #cccccc;
+	border-right: solid 1px #cccccc;
+}
+
+.wte-rounded-table div.wte-row:last-child span.cell:last-child{
+	border: 1px solid #cccccc;
+}
+
+/* ================ ADDITIONAL STYLES CSS FOR TABLES =================== */
+.striped-row:nth-child(even){
+	background-color:#f6f6f6;
+	/*background-color:#edf5fb;*/
+}
+.row-hover:hover{
+	background-color: #eeeeee;
+}
+.bordered{
+	border:1px solid #cccccc;
+}
+
+
+/* ================ INPUT TEXTBOX CSS ================== */
+.wte-input-text{
+	border-radius: 5px;
+	width: 300px;
+	height: 30px;
+	padding-left: 5px;
+	border: solid 1px #bf042b;
+}
+.wte-input-text-noBorder{
+	border: 0;
+	width: 100%;
+	padding-left: 5px;
+}
+
+.wte-fade-in{
+	transition: opacity 1.0s ease-in-out;
+	-moz-transition: opacity 1.0s ease-in-out;
+	-ms-transition: opacity 1.0s ease-in-out;
+	-o-transition: opacity 1.0s ease-in-out;
+}
+
+.animatedPanel{
+	-moz-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s;
+}
+
+.suggestionBar{
+	height:100px;
+	width: 400px;
+	background: #eeeeee;
+	border-radius: 5px;
+	font-size: 50px;
+	vertical-align: center;
+}
+.wte-rounded-panel{
+	border-radius: 10px;
+	border: solid 1px #bf042b;
+	overflow: hidden;
+}
+
+
+.page-header {
+    padding-bottom: 0 !important;
+    margin: 0 !important;
+    border-bottom: 0 !important;
+}
+.page-header .navbar-nav {
+    float: right;
+}
+.page-header > div > div, .page-header > div > ul {
+    display: inline-block;
+}
+.text-edit {
+    padding: 13px 0 0 0;
+}
+.account {
+    text-align:right;
+}
+.account > div, .account > ul {
+    text-align: left;
+}
+.navbar .nav > li > a.brand {
+    padding-left: 20px;
+    margin-left: 0
+}
+.content {
+    margin-top: 70px;
+    width: 100%
+}
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 30px;
+	width: 100%;
+	background: #ddd;
+	-webkit-box-shadow: 0 8px 6px 6px black;
+	-moz-box-shadow: 0 8px 6px 6px black;
+	box-shadow: 0 8px 6px 6px black
+}
+footer p {
+	padding: 5px 0 12px 10px
+}
+
+.featuredpic img{
+  width:510px;
+}
+/*.ng-invalid.ng-dirty{*/
+    /*border-color:#FA787E;*/
+/*}*/
+/*.ng-valid.ng-dirty{*/
+    /*border-color:#78FA89;*/
+/*}*/
